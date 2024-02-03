@@ -50,13 +50,22 @@ header h1{
     display: flex;
     width: 35%;
     justify-content: center;  
+    position: relative;
 }
 
 .hero-img img{
     max-width: 100%;
+    z-index: 1;
 }
 
-
+.hero-circle{ 
+    background:var(--header-color);
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 150px;
+}
 
 .hero-text{
     /* border: 1px solid green; */
@@ -150,15 +159,6 @@ footer{
     right: 20px;
     bottom: 20px;
 }
-
-/* .hero-circle{ 
-    background:var(--header-color);
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 0; 
-}*/
 
 @media screen and (max-width: 1200px){
     header h1{
